@@ -1,0 +1,507 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+	    <RelativeLayout 
+	        android:layout_gravity="top"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp" >
+	        
+	    	<ImageView 
+	        	android:layout_gravity="top"
+	        	android:layout_height="fill_parent"
+	        	android:layout_width="fill_parent"
+	        	android:src="@drawable/barra_top"
+	        	android:adjustViewBounds="false"
+	        	android:scaleType="fitXY"
+	        	android:contentDescription="@string/lbl_textoiniciosesion"/>
+	    	<TextView
+		        android:id="@+id/txtTituloView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:gravity="right"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="0dp"
+		        android:textStyle="bold"
+		        android:text="@string/txtTituloDetalleOferta"
+		        android:singleLine="true"
+		   		android:ellipsize="end" />
+	    	
+	    </RelativeLayout>
+	    
+	    <ScrollView
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent">
+		        
+		    <RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:paddingTop="5dip"
+			    android:paddingRight="0dip"
+			    android:paddingBottom="5dip"
+			    android:paddingLeft="0dip"
+			    android:id="@+id/rlyItem" >
+			    
+		        <RelativeLayout 
+		            android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/rlyEncabezadoDimension">
+		            
+		            <!--  fondo Dimension -->
+			    
+			    <ImageView
+			        android:id="@+id/imgFondoDetalleDimension" 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        android:layout_marginLeft="30dp"
+			        android:contentDescription="@string/contentDescriptionImagenes"   />
+			    
+			    <!--  fondo Encabezado Dimension -->
+			    
+			    <ImageView
+			        android:id="@+id/imgFondoDimension" 
+			      	android:layout_gravity="top"
+			       	android:layout_height="wrap_content"
+			       	android:layout_width="fill_parent"
+			       	android:adjustViewBounds="false"
+			       	android:layout_alignWithParentIfMissing="true"
+			       	android:scaleType="fitXY"
+			       	android:contentDescription="@string/lbl_textoiniciosesion"
+			       	android:layout_marginLeft="25dp"
+			     />
+			    
+			    <!--  Pictograma Dimension -->
+			    <LinearLayout android:id="@+id/thumbnail"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="0dip"
+			        android:layout_alignParentLeft="true"
+			        android:layout_marginRight="0dip">
+			 
+			        <ImageView
+			            android:id="@+id/imgDimension"
+			            android:layout_width="60dip"
+			            android:layout_height="wrap_content"
+			            android:scaleType="fitXY"
+			            android:adjustViewBounds="true"
+			            android:contentDescription="@string/contentDescriptionImagenes"/>
+			 
+			    </LinearLayout>
+			 
+			    <!-- Nombre Dimension-->
+			    <TextView
+			        android:id="@+id/txtTitulo"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_toRightOf="@+id/thumbnail"
+					android:gravity="top"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:layout_marginRight="0dp"
+			        android:layout_marginTop="2dp"
+			        android:textStyle="bold"
+			        android:text="@string/txtTextoPrincipal"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			 
+			    <!-- Texto de detalle -->
+			    <TextView
+			        android:id="@+id/txtSubTitulo"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="12sp"
+			        android:layout_marginTop="0dp"
+			        android:gravity="bottom"
+			        android:layout_below="@+id/txtTitulo"
+			        android:layout_toRightOf="@+id/thumbnail"
+			        android:layout_centerVertical="true"
+			        android:textColor="#FAFAFA"
+			        android:text="@string/txtTextoPrincipalDetalle"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+		            
+		        </RelativeLayout>
+		        
+		        <!-- dkljfskdjfhskljdfhskjdfhskjdhfsñlkjdfhlsjdfhlsjdflsjdfhlskjdflskjdfhlsjdflskdjfhlskdjflskjdfhlskjdfhlskdjh -->
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyDetalleEncabezado"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="60dp">
+	
+			        <ImageView
+			            android:id="@+id/imgFondoEncabezadoDescripcion"
+			            android:layout_width="fill_parent"
+			            android:layout_height="55sp"
+			            android:layout_gravity="top"
+			            android:layout_marginLeft="40dp"
+			            android:adjustViewBounds="false"
+			            android:contentDescription="@string/lbl_textoiniciosesion"
+			            android:scaleType="fitXY"/>
+			    
+			    <!-- Nombre Dimension-->
+			    <TextView
+			        android:id="@+id/txtTextoSuperiorOferta"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="12sp"
+			        android:gravity="right"
+			        android:layout_marginRight="10dp"
+			        android:textColor="#ffffff"
+			        android:text="@string/txtOrigenANSPE_Oferente_TipoOferta"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			    
+			    <TextView
+			        android:id="@+id/txtDescripcionOferta"
+			        android:layout_below="@+id/txtTextoSuperiorOferta"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:gravity="right"
+					android:layout_marginRight="10dp"
+					android:layout_marginLeft="50dp"
+					android:layout_centerVertical="true"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:textStyle="bold"
+			        android:text="@string/txtNombreCortoOferta"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+	
+	   		    <TextView
+	   		        android:id="@+id/txtLogrosOferta"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="12sp"
+			        android:gravity="right"
+			        android:layout_marginRight="10dp"
+			        android:textColor="#ffffff"
+			        android:text="@string/txtLogrosOferta"
+			        android:singleLine="true"
+			        android:layout_below="@+id/txtDescripcionOferta"
+			   		android:ellipsize="end" />
+			    
+			    
+			    </RelativeLayout>
+			    
+			    <!-- 78979879879879879879879879879879879879879879879879879879879879879879879879879879879879879879879 -->
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyParaQuienes"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rlyDetalleEncabezado"
+			        android:layout_marginTop="10dp" 
+			        android:clickable="true"
+			        android:onClick="MostrarOcultar"
+			        android:tag="rlyParaQuienes" >
+	
+			         <ImageView
+			             android:id="@+id/imgParaQuienes"
+				        android:layout_gravity="top"
+				       	android:layout_height="25sp"
+				       	android:layout_width="fill_parent"
+				       	android:adjustViewBounds="false"
+				       	android:layout_marginLeft="40dp"
+				       	android:layout_alignWithParentIfMissing="true"
+				       	android:scaleType="fitXY"
+				       	android:contentDescription="@string/lbl_textoiniciosesion"/>
+			    
+			    <!-- Para quienes-->
+			    
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_marginRight="0dp"
+					android:layout_centerVertical="true"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:layout_marginTop="2dp"
+			        android:textStyle="bold"
+			        android:text="@string/txtParaQuienes"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			    
+			    </RelativeLayout>
+			    <RelativeLayout
+			        android:id="@+id/rlyParaQuienesContenidoDesplegable"
+			        android:layout_below="@+id/rlyParaQuienes"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2sp" 
+			        android:layout_marginLeft="45dp"
+			        android:padding="5sp" >
+			        
+			    	<TextView
+			    	    android:id="@+id/txtParaQuienesInfo"
+			    	    android:layout_width="match_parent"
+			   	  		android:layout_height="wrap_content"
+			   	  		android:textColor="#ffffff"
+			   	  		android:textSize="14sp"
+			   	  		android:layout_marginRight="10sp"
+			   	  		android:layout_gravity="center_vertical|right"
+			   	  		android:text="@string/txtContenidoDesplegable" />
+			    	
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyQueEs"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rlyParaQuienesContenidoDesplegable"
+			        android:layout_marginTop="10dp"
+			        android:clickable="true"
+			        android:onClick="MostrarOcultar" 
+			        android:tag="rlyQueEs" >
+	
+			         <ImageView
+			            android:id="@+id/imgQueEs"
+				        android:layout_gravity="top"
+				       	android:layout_height="25sp"
+				       	android:layout_width="fill_parent"
+				       	android:adjustViewBounds="false"
+				       	android:layout_marginLeft="40dp"
+				       	android:layout_alignWithParentIfMissing="true"
+				       	android:scaleType="fitXY"
+				       	android:contentDescription="@string/lbl_textoiniciosesion" />
+			    
+			    <!-- Qué es?-->
+			    
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_marginRight="0dp"
+					android:layout_centerVertical="true"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:layout_marginTop="2dp"
+			        android:textStyle="bold"
+			        android:text="@string/txtQueEs"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			    
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyQueEsContenidoDesplegable"
+			        android:layout_below="@+id/rlyQueEs"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2sp" 
+			        android:layout_marginLeft="45dp"
+			        android:padding="5sp" >
+			        
+			    	<TextView
+			    	    android:id="@+id/txtQueEsInfo"
+			    	    android:layout_width="match_parent"
+			   	  		android:layout_height="wrap_content"
+			   	  		android:textColor="#ffffff"
+			   	  		android:textSize="14sp"
+			   	  		android:layout_marginRight="10sp"
+			   	  		android:layout_gravity="center_vertical|right"
+			        	android:text="@string/txtContenidoDesplegable" />
+			    	
+			    </RelativeLayout>
+			    
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyTips"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rlyQueEsContenidoDesplegable"
+			        android:layout_marginTop="10dp" android:clickable="true"
+			        android:onClick="MostrarOcultar"
+			        android:tag="rlyTips">
+	
+			        <ImageView
+			            android:id="@+id/imgTips"
+				        android:layout_gravity="top"
+				       	android:layout_height="25sp"
+				       	android:layout_width="fill_parent"
+				       	android:adjustViewBounds="false"
+				       	android:layout_marginLeft="40dp"
+				       	android:layout_alignWithParentIfMissing="true"
+				       	android:scaleType="fitXY"
+				       	android:contentDescription="@string/lbl_textoiniciosesion" />
+			    
+			    <!-- Tips-->
+			    
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_marginRight="0dp"
+					android:layout_centerVertical="true"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:layout_marginTop="2dp"
+			        android:textStyle="bold"
+			        android:text="@string/txtTips"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			    
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyTipsContenidoDesplegable"
+			        android:layout_below="@+id/rlyTips"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2sp" 
+			        android:layout_marginLeft="45dp"
+			        android:padding="5sp" >
+			        
+			    	<TextView
+			    	    android:id="@+id/txtTipsInfo"
+			    	    android:layout_width="match_parent"
+			   	  		android:layout_height="wrap_content"
+			   	  		android:textColor="#ffffff"
+			   	  		android:textSize="14sp"
+			   	  		android:layout_marginRight="10sp"
+			        	android:layout_gravity="center_vertical|right"
+			        	android:text="@string/txtContenidoDesplegable" />
+			    	
+			    </RelativeLayout>
+			    
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyDonde"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rlyTipsContenidoDesplegable"
+			        android:layout_marginTop="10dp"
+			        android:clickable="true"
+			        android:onClick="MostrarOcultar"
+			        android:tag="rlyDonde" >
+	
+			        <ImageView
+			            android:id="@+id/imgDonde"
+				        android:layout_gravity="top"
+				       	android:layout_height="25sp"
+				       	android:layout_width="fill_parent"
+				       	android:adjustViewBounds="false"
+				       	android:layout_marginLeft="40dp"
+				       	android:layout_alignWithParentIfMissing="true"
+				       	android:scaleType="fitXY"
+				       	android:contentDescription="@string/lbl_textoiniciosesion" />
+			    
+			    <!-- Donde -->
+			    
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_marginRight="0dp"
+					android:layout_centerVertical="true"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:layout_marginTop="2dp"
+			        android:textStyle="bold"
+			        android:text="@string/txtDonde"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			    
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyDondeContenidoDesplegable"
+			        android:layout_below="@+id/rlyDonde"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2sp" 
+			        android:layout_marginLeft="45dp"
+			        android:padding="5sp" >
+			        
+			    	<TextView
+			    	    android:id="@+id/txtDondeInfo"
+			    	    android:layout_width="match_parent"
+			   	  		android:layout_height="wrap_content"
+			   	  		android:textColor="#ffffff"
+			   	  		android:textSize="14sp"
+			   	  		android:layout_marginRight="10sp"
+			        	android:layout_gravity="center_vertical|right"
+			        	android:text="@string/txtContenidoDesplegable" />
+			    	
+			    </RelativeLayout>
+			    
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyRequisitos"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rlyDondeContenidoDesplegable"
+			        android:layout_marginTop="10dp"
+			        android:clickable="true"
+			        android:onClick="MostrarOcultar"
+			        android:tag="rlyRequisitos" >
+	
+			        <ImageView
+			            android:id="@+id/imgCuando"
+				        android:layout_gravity="top"
+				       	android:layout_height="25sp"
+				       	android:layout_width="fill_parent"
+				       	android:adjustViewBounds="false"
+				       	android:layout_marginLeft="40dp"
+				       	android:layout_alignWithParentIfMissing="true"
+				       	android:scaleType="fitXY"
+				       	android:contentDescription="@string/lbl_textoiniciosesion" />
+			    
+			    <!-- Requisitos-->
+			    
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_marginRight="0dp"
+					android:layout_centerVertical="true"
+			        android:textColor="#ffffff"
+			        android:textSize="14sp"
+			        android:layout_marginTop="2dp"
+			        android:textStyle="bold"
+			        android:text="@string/txtRequisitos"
+			        android:singleLine="true"
+			   		android:ellipsize="end" />
+			    
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rlyRequisitosContenidoDesplegable"
+			        android:layout_below="@+id/rlyRequisitos"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2sp" 
+			        android:layout_marginLeft="45dp"
+			        android:padding="5sp" >
+			        
+			    	<TextView
+			    	    android:id="@+id/txtRequisitosInfo"
+			    	    android:layout_width="match_parent"
+			   	  		android:layout_height="wrap_content"
+			   	  		android:textColor="#ffffff"
+			   	  		android:textSize="14sp"
+			   	  		android:layout_marginRight="10sp"
+			        	android:layout_gravity="center_vertical|right"
+			        	android:text="@string/txtContenidoDesplegable" />
+			    	
+			    </RelativeLayout>
+			 </RelativeLayout>
+		 
+	    </ScrollView>
+	    
+	    </LinearLayout>
+	        
+</FrameLayout>

@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+	    <RelativeLayout 
+	        android:layout_gravity="top"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp" >
+	        
+	    	<ImageView 
+	        	android:layout_gravity="top"
+	        	android:layout_height="fill_parent"
+	        	android:layout_width="fill_parent"
+	        	android:src="@drawable/barra_top"
+	        	android:adjustViewBounds="false"
+	        	android:scaleType="fitXY"
+	        	android:contentDescription="@string/lbl_textoiniciosesion"/>
+	    	<TextView
+		        android:id="@+id/txtTitulo"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:gravity="right"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="0dp"
+		        android:textStyle="bold"
+		        android:text="@string/txtTituloRegistro"
+		        android:singleLine="true"
+		   		android:ellipsize="end" />
+	    	
+	    </RelativeLayout>
+        <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		  	android:layout_gravity="top"
+	    	android:gravity="top"
+		    android:padding="10dp"
+		    android:paddingTop="0dp">
+	    	
+	           	    <TextView
+				        android:id="@+id/lblEmail"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/lblTextoIntroRegistro"
+				        android:textSize="16sp" 
+				        android:gravity="center"
+				        android:layout_marginTop="0dp"
+				        android:textColor="#0093d8" />
+			        
+	           	    <EditText
+				        android:id="@+id/txtNombres"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/txtNombresHint"
+				        android:textSize="14sp"
+				        android:textColor="#000000" 
+				        android:background="#ffffff"
+				        android:padding="5dp"
+				        android:layout_marginTop="5dp"
+				        android:inputType="textCapSentences"
+				        android:maxLength="15" />
+	           	    
+	           	    <EditText
+				        android:id="@+id/txtApellidos"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/txtApellidosHint"
+				        android:textSize="14sp"
+				        android:textColor="#000000" 
+				        android:background="#ffffff"
+				        android:padding="5dp"
+				        android:layout_marginTop="10dp"
+				        android:inputType="textCapSentences"
+				        android:maxLength="15" />
+	           	    
+				    <EditText
+				        android:id="@+id/txtEmail"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/txtEmailHint"
+				        android:textSize="14sp"
+				        android:textColor="#000000" 
+				        android:background="#ffffff"
+				        android:padding="5dp"
+				        android:layout_marginTop="10dp"
+				        android:inputType="textEmailAddress"
+				        android:maxLength="50" />
+				    
+				    <EditText
+				        android:id="@+id/txtPassword"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/txtPasswordRegistroHint"
+				        android:textSize="14sp"
+				        android:textColor="#000000"
+				        android:inputType="textPassword"
+				        android:layout_marginTop="10dp"
+				        android:background="#ffffff"
+				        android:padding="5dp" 
+				        android:maxLength="15" />
+			        
+				    <LinearLayout 
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					  	android:layout_gravity="bottom"
+				    	android:gravity="center"
+					    android:padding="0dp">
+					    
+					    <TextView
+					        android:id="@+id/lblDepto"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/lblDepto"
+					        android:textSize="14sp" 
+					        android:gravity="right"
+					        android:layout_marginTop="0dp"
+					        android:textColor="#0093d8" />
+							    
+					    <Spinner
+					        android:id="@+id/ddlDepartamento"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content" />
+					    
+					    <TextView
+					        android:id="@+id/lblMun"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/lblMunicipío"
+					        android:textSize="14sp" 
+					        android:gravity="right"
+					        android:layout_marginTop="0dp"
+					        android:textColor="#0093d8" />
+					    
+					    <Spinner
+					        android:id="@+id/ddlMunicipio"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content" />
+					    
+					    </LinearLayout>
+ 
+				    
+				    <Button
+				        android:id="@+id/btnRegistro"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center_vertical"
+				        android:text="@string/btnRegistro"
+				        android:drawableLeft="@drawable/power"
+				        android:background="#455D80"
+				        android:paddingLeft="20dp"
+				        android:paddingRight="20dp"
+				        android:paddingTop="5dp"
+				        android:paddingBottom="5dp"
+				        android:layout_marginTop="20dp"
+				        android:textSize="14sp"
+				        android:textColor="#ffffff"
+				        android:gravity="right|center_vertical" 
+				         />
+				    
+				</LinearLayout>
+			</LinearLayout>
+
+		<LinearLayout 
+	        android:layout_gravity="bottom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:visibility="invisible" >
+        
+	    	<ImageView 
+	        	android:layout_gravity="bottom"
+	        	android:layout_height="fill_parent"
+	        	android:layout_width="fill_parent"
+	        	android:src="@drawable/barra_down"
+	        	android:adjustViewBounds="false"
+	        	android:scaleType="fitXY"/>    
+	        
+	    </LinearLayout>    
+	    
+</FrameLayout>

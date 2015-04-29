@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dip"
+    android:paddingRight="0dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="0dip"
+    
+    android:id="@+id/rlyItem" >
+ 
+    <!--  fondo Dimension -->
+    
+    <ImageView
+        android:id="@+id/imgFondoDimension" 
+      	android:layout_gravity="top"
+       	android:layout_height="wrap_content"
+       	android:layout_width="fill_parent"
+       	android:adjustViewBounds="false"
+       	android:layout_alignWithParentIfMissing="true"
+       	android:scaleType="fitXY"
+       	android:contentDescription="@string/lbl_textoiniciosesion"
+       	android:src="@drawable/fondo_home"
+       	android:layout_marginLeft="25dp"
+     />
+    
+    <!--  Pictograma Dimension -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="0dip" >
+ 
+        <ImageView
+            android:id="@+id/imgDimension"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/boton_bitacora"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Nombre Dimension-->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+		android:gravity="top"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:text="ESTE ES EL TEXTO PRINCIPAL"
+        android:singleLine="true"
+   		android:ellipsize="end" />
+ 
+    <!-- Texto de detalle -->
+    <TextView
+        android:id="@+id/txtSubTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="0dp"
+        android:gravity="bottom"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_centerVertical="true"
+        android:textColor="#FAFAFA"
+        android:text="Aquí debe ir un texto de detalle"
+        android:singleLine="true"
+   		android:ellipsize="end" />
+ 
+    <!-- Número de Ofertas -->
+    <RelativeLayout
+        	android:layout_gravity="top"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginTop="1dp"
+	        android:layout_marginBottom="0dp"
+	        android:layout_marginLeft="35dp"
+	        android:id="@+id/rlyNumOfertas"
+	         >
+        
+        <View android:layout_width="20dp"
+    		android:layout_height="20dp"
+    		android:background="@drawable/circulo"
+    		/>
+    
+	    <TextView
+	        android:id="@+id/txtNumOfertas"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textStyle="italic"
+	        android:text="+99"
+	        android:layout_marginRight="0dp"
+	        android:layout_marginTop="0dp"
+	        android:textSize="12sp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"/>
+    </RelativeLayout>
+ 
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="${relativePackage}.${activityClass}"
+    android:id="@+id/root" >
+
+     
+    <LinearLayout
+        android:id="@+id/main_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+	    <RelativeLayout 
+	        android:layout_gravity="top"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp" >
+	        
+	    	<ImageView 
+	        	android:layout_gravity="top"
+	        	android:layout_height="fill_parent"
+	        	android:layout_width="fill_parent"
+	        	android:src="@drawable/barra_top"
+	        	android:adjustViewBounds="false"
+	        	android:scaleType="fitXY"
+	        	android:contentDescription="@string/lbl_textoiniciosesion"
+	        	/>
+	    	<TextView
+		        android:id="@+id/txtTitulo"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:gravity="right"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="0dp"
+		        android:textStyle="bold"
+		        android:text="@string/txtTituloPriorizacionOferta"
+		        android:singleLine="true"
+		   		android:ellipsize="end" />
+	    		         
+	    </RelativeLayout>
+        <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		  	android:layout_gravity="top"
+	    	android:gravity="top"
+		    android:padding="10dp"
+		    android:layout_marginBottom="45dp">
+	    	
+            <TextView
+		        android:id="@+id/txtIntroMensaje"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:gravity="left"
+		        android:textColor="#ffffff"
+		        android:textSize="14sp"
+		        android:layout_marginRight="0dp"
+		        android:layout_marginTop="0dp" />
+            
+            
+            <ListView
+        		android:id="@+id/list"
+        		android:layout_height="wrap_content"
+        		android:layout_width="match_parent"
+        		android:layout_marginTop="5dp"
+        		android:divider="@null"
+				android:dividerHeight="0dp">
+    		</ListView>	    	
+	        	    
+		</LinearLayout>
+		
+		</LinearLayout>
+
+		<LinearLayout 
+	        android:layout_gravity="bottom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp" >
+	    	<ImageView 
+	        	android:layout_gravity="bottom"
+	        	android:layout_height="fill_parent"
+	        	android:layout_width="fill_parent"
+	        	android:src="@drawable/barra_down"
+	        	android:adjustViewBounds="false"
+	        	android:scaleType="fitXY"/>    
+	        
+	    </LinearLayout>    
+    
+</FrameLayout>

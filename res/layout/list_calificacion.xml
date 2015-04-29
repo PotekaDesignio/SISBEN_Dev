@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="0dip"
+    android:paddingRight="0dip"
+    android:paddingBottom="0dip"
+    android:paddingLeft="0dip"
+    android:id="@+id/rlyItem" 
+    android:background="@null" >
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" 
+        android:id="@+id/rlyContenidoItem"
+        >
+
+        <!-- Nombre Dimension-->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:gravity="top"
+        android:textColor="#0093d8"
+        android:textSize="14sp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text="ESTE ES EL TEXTO PRINCIPAL"
+        android:singleLine="true"
+   		android:ellipsize="end" />
+ 
+    <!-- Texto de detalle -->
+    <TextView
+        android:id="@+id/txtSubTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="bottom"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_centerVertical="true"
+        android:textColor="#FAFAFA"
+        android:text="Aquí debe ir un texto de detalle"
+        android:singleLine="true"
+   		android:ellipsize="end" />
+    </RelativeLayout>
+    
+    <RatingBar
+        style="@style/OfertaRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rlyContenidoItem"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="1.0" />
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name">OfertAPP</string>
+    <string name="API_KEY_GCM">AIzaSyBr-eUv14XEVSa6dDkLNFXFRtDBCTskcZo</string>
+    <string name="SENDER_ID">741403836434</string>
+    <string name="PREFERENCE_FILE_KEY">com.potekadesignio.ofertapp_dev.PREFERENCE_FILE_KEY</string>
+    <string name="APP_LOCAL_ID">APP_LOCAL_ID</string>
+    <string name="RUTA_NOMBRE_DATOS_USUARIO">/sdcard/usuario_ofertapp.bin</string>
+    <string name="RUTA_NOMBRE_DATOS_MOR">/sdcard/ofertas_mor.bin</string>
+    <string name="RUTA_NOMBRE_DATOS_OFERTAS">/sdcard/ofertas_usuario.bin</string>
+    <string name="RUTA_NOMBRE_DATOS_OFERTAS_AGENDADAS">/sdcard/ofertas_agendadas_usuario.bin</string>
+    <string name="RUTA_NOMBRE_DATOS_DIMENSIONES">/sdcard/dimensiones_usuario.bin</string>
+    <string name="RUTA_NOMBRE_DATOS_BITACORAS">/sdcard/bitacoras_usuario.bin</string>
+    <string name="HTTP_MOR_DATOS_ABIERTOS">http://servicedatosabiertoscolombia.cloudapp.net/v1/anspe/dataofertapp?$format=json</string>
+    <string name="PROPERTY_APP_VERSION">1.0.0</string>
+
+    <!-- Página principal -->
+    <string name="btn_usuario_iniciar_sesion">INICIAR SESIÓN</string>
+    <string name="btn_usuarioregistro">REGISTRO</string>
+    <string name="btn_botonmor">CONSULTA MANUAL DE OFERTAS Y RUTAS - MOR</string>
+
+    <!-- Login -->
+    <string name="logo_anspe">logo_anspe</string>
+    <string name="txt_usuario_login">Correo Electrónico</string>
+    <string name="lbl_nombre_aplicacion">OfertAPP</string>
+    <string name="lbl_textoiniciosesion">Ingresa tu usuario y contraseña</string>
+    <string name="txt_usuario_password">Contraseña</string>
+    <string name="lblTextoOlvidastePass">¿Olvidaste tu contraseña?</string>
+
+    <!-- Registro -->
+    <string name="lblTextoIntroRegistro">Llena tus datos y regístrate!</string>
+    <string name="txtEmailHint">Correo electrónico</string>
+    <string name="txtPasswordRegistroHint">Contraseña</string>
+    <string name="lblDepto">Departamento</string>
+    <string name="lblMunicipío">Municipio</string>
+    <string name="btnRegistro">REGISTRARSE</string>
+    <string name="title_activity_home">OfertAPP - Página Principal</string>
+    <string name="title_section1">Preferencias de Usuario</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Configuración Regional</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ofertas">OfertasActivity</string>
+    <string name="txtNombresHint">Nombres</string>
+    <string name="txtApellidosHint">Apellidos</string>
+
+    <!-- Titulos Activities -->
+    <string name="txtTituloMOR">Manual de Ofertas y Rutas</string>
+    <!-- <string name="txtTituloDetalleMOR">Ofertas por Dimensión</string> -->
+    <string name="txtTituloDetalleMOR">Información por Dimensión</string>
+    <string name="txtTituloHome">Página Principal - OfertAPP</string>
+    <string name="txtTituloLogin">Inicia sesión en OfertAPP</string>
+    <string name="txtTituloOfertas">Tus Ofertas Disponibles</string>
+    <string name="txtTituloRegistro">Registro de Usuario</string>
+    <string name="txtTituloDetalleOferta">Detalle</string>
+    <!-- <string name="txtTituloPriorizacionOferta">Priorización de Oferta</string> -->
+    <string name="txtTituloPriorizacionOferta">Encuesta de Oferta</string>
+    <string name="txtTituloCalificacionOferta">Calificación de la Oferta</string>
+
+    <!-- Datos Web Service -->
+    <string name="WSDL_TARGET_NAMESPACE">http://mssql-2014.cloudapp.net:1213/wsOfertAPP.asmx/</string>
+    <string name="SOAP_ADDRESS">http://mssql-2014.cloudapp.net:1213/wsOfertAPP.asmx</string>
+
+    <!-- Errores Web Service -->
+    <string name="ERROR_USUARIO_DUPLICADO">PK_ERROR_0001</string>
+    <string name="ERROR_USUARIO_NO_EXISTE">PK_ERROR_0002</string>
+    <string name="title_activity_mor">MORActivity</string>
+    <string name="title_activity_oferta_detalle_mor">OfertaDetalleMORActivity</string>
+    <string name="title_activity_bitacora">BitacoraActivity</string>
+    <string name="title_activity_oferta_completa_detalle">OfertaCompletaDetalleActivity</string>
+    <string name="title_activity_oferta_seleccion">OfertaSeleccionActivity</string>
+
+    <!-- Tus Ofertas Disponibles -->
+    <!-- <string name="lblTextoBienvenidaMOR">Aquí encontrarás un listado de las Ofertas Disponibles en el Mapa de Ofertas y Rutas. Sólo se mostrarán las dimensiones con Oferta Vigente.</string> -->
+    <string name="lblTextoBienvenidaMOR">Aquí encontrarás un listado con la información disponible en el Manual de Ofertas y Rutas. Sólo se mostrarán las dimensiones con información.</string>
+
+    <!-- Tus Ofertas Disponibles -->
+    <string name="lblTextoBienvenida">Aquí encontrarás un listado de las ofertas disponibles para tu Municipio. Sólo se mostrarán las dimensiones con oferta vigente.</string>
+
+    <!-- Hoja de Oferta -->
+    <string name="lblTextoOfertasParaCalificacion">Aquí encontrarás un listado de las ofertas disponibles para calificación. Sólo se mostrarán aquellas a las que te agendaste.</string>
+
+    <!-- Oferta Seleccionada -->
+    <string name="contentDescriptionImagenes">Descripcion</string>
+    <string name="txtTextoPrincipal">ESTE ES EL TEXTO PRINCIPAL</string>
+    <string name="txtTextoPrincipalDetalle">Aquí debe ir un texto de detalle</string>
+    <string name="txtOrigenANSPE_Oferente_TipoOferta">Origen ANPE - Oferente - Tipo de Oferta</string>
+    <string name="txtNombreCortoOferta">NOMBRE CORTO OFERTA</string>
+    <string name="txtLogrosOferta">Logro(s): 1, 2, 3</string>
+    <string name="txtContenidoDesplegable">Contenido Desplegable</string>
+    <string name="txtParaQuienes">¿PARA QUIENES?</string>
+    <string name="txtQueEs">¿QUÉ ES?</string>
+    <string name="txtTips">★ TIPS</string>
+    <string name="txtDonde">¿DÓNDE?</string>
+    <string name="txtCuando">¿CUÁNDO?</string>
+    <string name="txtRequisitos">¿REQUISITOS?</string>
+    <string name="txtMasInfo">MÁS INFORMACIÓN</string>
+    <string name="txtAgendarme">¡AGENDARME!</string>
+    <string name="title_activity_priorizacion_oferta">PriorizacionOfertaActivity</string>
+    <string name="title_activity_hoja_oferta">HojaOfertaActivity</string>
+    <string name="title_activity_calificar_oferta">CalificarOfertaActivity</string>
+
+    <!-- Calificación de Oferta -->
+    <string name="txtInfoOferta">INFORMACIÓN DE LA OFERTA</string>
+    <string name="lblObservaciones">OBSERVACIONES</string>
+    <string name="lblConvocados">CONVOCADOS</string>
+    <string name="lblConvocadosHint">Ingresa el número de Convocados a la Oferta</string>
+    <string name="lblAsistenes">ASISTENTES</string>
+    <string name="lblAsistenesHint">Ingresa el número de Asistenes a la Oferta</string>
+    <string name="txtCalificaExperiencia">★★ CALIFICA TU EXPERIENCIA ★★</string>
+    <string name="txtAgregarFotos">AGREGAR FOTOS</string>
+    <string name="txtInfoImagenes">¡Puedes agregar hasta tres(3) fotografías!</string>
+    <string name="txtGuardar">ENVIAR CALIFICACIÓN</string>
+    <string name="title_activity_oferta_seleccion_mor">OfertaSeleccionMORActivity</string>
+    <string name="title_activity_bitacora_detalle">BitacoraDetalleActivity</string>
+
+    <!-- Bitácoras -->
+    <string name="lblTextoBienvenidoaNuevaBitacora">!Escribe tu relato! Titúlala y dale rienda suelta a tus vivencias.</string>
+    <string name="txtTituloBitacoraActivity">Nueva Historia</string>
+    <string name="lblTituloBitacora">¡TITÚLALA PRIMERO!</string>
+    <string name="txtTituloBitacoraHint">Toda historia merece un nombre</string>
+    <string name="txtTextoBitacoraHint">Y puedes escribir lo que quieras aqui</string>
+    <string name="title_activity_recordar_password">RecordarPasswordActivity</string>
+    
+    <!-- Recordar Contraseña -->
+    <string name="txtTituloRecordarPass">Recordar Contraseña</string>
+    <string name="lbl_textoRecordarPass">Ingresa el correo que registraste en OfertAPP</string>
+    <string name="btnRecordarPass">¡Refresca mi memoria!</string>
+    <string name="txtMensajeInfoRecordarPass">OfertAPP te enviará un mensaje donde encontrarás información importante acerca de tu cuenta.</string>
+    <string name="APP_RECORDAR_PASS">APP_RECORDAR_PASS</string>
+
+</resources>

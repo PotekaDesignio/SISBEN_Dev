@@ -1,0 +1,191 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:gravity="top"
+    android:adjustViewBounds="false"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:orientation="vertical">
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:padding="0dp"
+	    android:gravity="top"
+	    android:orientation="vertical" >
+	    
+	     <RelativeLayout 
+	        android:layout_gravity="top"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp" >
+	        
+	    	<ImageView 
+	        	android:layout_gravity="top"
+	        	android:layout_height="fill_parent"
+	        	android:layout_width="fill_parent"
+	        	android:src="@drawable/barra_top"
+	        	android:adjustViewBounds="false"
+	        	android:scaleType="fitXY"
+	        	android:contentDescription="@string/lbl_textoiniciosesion"/>
+	    	<TextView
+		        android:id="@+id/txtTituloView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:gravity="right"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="0dp"
+		        android:textStyle="bold"
+		        android:text="@string/txtTituloBitacoraActivity"
+		        android:singleLine="true"
+		   		android:ellipsize="end" />
+	    </RelativeLayout>
+	    
+	     <TextView
+		        android:id="@+id/txtIntroMensaje"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:gravity="left"
+		        android:textColor="#ffffff"
+		        android:textSize="14sp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="0dp"
+		        android:text="@string/lblTextoBienvenidoaNuevaBitacora" />
+	     
+ 	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="5dip"
+	    android:paddingRight="5dip"
+	    android:paddingBottom="5dip"
+	    android:paddingLeft="5dip"
+	    android:id="@+id/rlyItem" >
+ 
+ 	    
+ 	    
+ 	    
+    <!--  fondo Dimension -->
+    
+    <ImageView
+        android:id="@+id/imgFondoDimension" 
+      	android:layout_gravity="top"
+       	android:layout_height="wrap_content"
+       	android:layout_width="fill_parent"
+       	android:adjustViewBounds="false"
+       	android:layout_alignWithParentIfMissing="true"
+       	android:scaleType="fitXY"
+       	android:contentDescription="@string/lbl_textoiniciosesion"
+       	android:src="@drawable/fondo_home"
+       	android:layout_marginLeft="25dp"
+     />
+    
+    <!--  Pictograma Dimension -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="0dip" >
+ 
+        <ImageView
+            android:id="@+id/imgDimension"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/boton_bitacora"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Nombre Dimension-->
+
+	    <EditText
+	        android:id="@+id/txtTitulo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="0dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_toRightOf="@+id/thumbnail"
+	        android:background="#00000000"
+	        android:ellipsize="end"
+	        android:gravity="top"
+	        android:hint="@string/lblTituloBitacora"
+	        android:singleLine="true"
+	        android:inputType="textCapCharacters"
+	        android:textColor="#ffffff"
+	        android:textColorHint="#d3d3d3"
+	        android:textSize="14sp"
+	        android:textStyle="bold" />
+	 
+	    <!-- Texto de detalle -->
+	    <TextView
+	        android:id="@+id/txtSubTitulo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:layout_marginTop="0dp"
+	        android:gravity="top"
+	        android:layout_below="@+id/txtTitulo"
+	        android:layout_toRightOf="@+id/thumbnail"
+	        android:layout_centerVertical="true"
+	        android:textColor="#FAFAFA"
+	        android:text="@string/txtTituloBitacoraHint"
+	        android:singleLine="true"
+	   		android:ellipsize="end"
+	   		 />
+     </RelativeLayout>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+   		android:layout_height="fill_parent"
+	    android:layout_gravity="bottom"
+	    android:adjustViewBounds="false"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingBottom="10dp"
+	    android:paddingTop="0dp"
+	    android:gravity="top"
+	    android:orientation="vertical">
+	    
+         <EditText
+             android:id="@+id/txtTextoBitacora"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="0sp"
+             android:layout_marginTop="5dp"
+             android:adjustViewBounds="false"
+             android:gravity="top|left"
+             android:hint="@string/txtTextoBitacoraHint"
+             android:inputType="textMultiLine|textCapSentences"
+             android:lines="40"
+             android:maxLength="1000"
+             android:maxLines="50"
+             android:minLines="13"
+             android:padding="5dp"
+             android:scrollbars="vertical"
+             android:textColor="#FFFFFF"
+             android:textColorHint="#d3d3d3"
+             android:textSize="14sp" 
+             android:background="#1890d0"
+             />
+         
+         	<ListView
+        		android:id="@+id/list"
+        		android:layout_height="wrap_content"
+        		android:layout_width="match_parent"
+        		android:divider="@null"
+				android:dividerHeight="0dp"
+				android:layout_gravity="bottom">
+    		</ListView>
+         
+    </LinearLayout>
+    
+</LinearLayout>
+    
+
+</LinearLayout>
